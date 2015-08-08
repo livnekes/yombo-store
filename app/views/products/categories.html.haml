@@ -4,8 +4,9 @@
   %ul
     - for category in @product_categories
       %li
-        %div.img{:style => category.image ? "background-image:url(#{category.image.path})" : 'background-color:#efefef'}
         .space
+          %div.img{:style => category.image ? "background-image:url(#{category.image.path})" : 'background-color:#efefef'}
           %h4= link_to category.name, products_path(category.permalink)
           %p= category.description
+
       
