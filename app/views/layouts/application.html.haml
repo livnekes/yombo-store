@@ -18,24 +18,24 @@
         / Primary navigation
         %nav.main
           %ul
-            %li= link_to "Home", root_path, :nav_item => :home
+            %li= link_to "בית", root_path, :nav_item => :home
             %li
-              = link_to "Our catalogue", catalogue_path, :nav_item => :catalogue, :class => 'noborder'
+              = link_to "קטלוג", catalogue_path, :nav_item => :catalogue, :class => 'noborder'
               %ul
                 - for category in Shoppe::ProductCategory.ordered
                   %li= link_to category.name, products_path(category.permalink)
             -#%li= link_to "Why shop with us?", page_path(:why), :nav_item => :why
-            %li= link_to "FAQs", page_path(:faqs), :nav_item => :faqs
+            %li= link_to "שאלות נפוצות", page_path(:faqs), :nav_item => :faqs
             -#%li= link_to "Get in touch", page_path(:contact), :nav_item => :contact
 
         - if @full_header
-          %h2 Welcome to our Yombo Store.
-          %p.intro Hey this is some text
+          %h2 :יומבו מוצרים מציג
+          %p.intro מוצר אחד או שניים או שלושה
 
       - if @full_header
         .bar
           .inner
-            %p.call Call us today on <b>01202 901 101</b> if you have any questions.
+            %p.call מוזמנים להתקשר למספר 12345678910
     
     / Main content section
     %section.content
@@ -45,9 +45,9 @@
         %section.sidebar
           - if content_for?(:sidebar)
             = yield :sidebar
-          - else
-            = render 'shared/basket'
-            = render 'shared/reasons'
+          -#- else
+          -#  = render 'shared/basket'
+          -#  = render 'shared/reasons'
       
         / Primary section
         %section.primary

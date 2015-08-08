@@ -67,9 +67,9 @@ header.main {
 		padding:45px 0 30px 0;
 		overflow:hidden;
 		ul {
-			float:left;
+			float:right;
 			overflow:hidden;
-			li { float:left; margin-right:40px;}
+			li { float:right; margin-right:40px;}
 			li a { color:#fff; display:block;	text-decoration:none; border-bottom:3px solid transparent; padding-bottom:3px;}
 			li a:hover { border-color:#fff;}
 			li a.noborder:hover { border-color:transparent }
@@ -107,9 +107,9 @@ header.main {
 	}
 	
 	// Main header
-	h2 { font-size:3.2em; font-weight:normal; margin-bottom:20px;}
+	h2 { font-size:3.2em; font-weight:normal; margin-bottom:20px; text-align:right;}
 	// Introduction text
-	p.intro { font-size:1.1em; line-height:1.5; width:65%; margin-bottom:55px;}
+	p.intro { font-size:1.1em; line-height:1.5; margin-bottom:55px; text-align:right;}
 	
 	// Offer/contact bar
 	.bar {
@@ -117,7 +117,7 @@ header.main {
 		padding:14px 0;
 		overflow:hidden;
 		p { background-repeat:no-repeat; background-position:0 1px;	 background-size:16px; padding-left:22px;}
-		p.call { float:left; background-image:image-url('call.svg')}
+		p.call { float:right; background-image:image-url('call.svg')}
 		p.offer { float:right; background-image:image-url('tags.svg')}
 	}
 	
@@ -276,6 +276,7 @@ section.content {
 						h4 a:hover { text-decoration:underline;}
 						p { line-height:1.7; font-size:0.9em; margin-top:10px;}
 						margin-left:150px;
+                        margin-top: 46px;
 					}
 				}
 			}
