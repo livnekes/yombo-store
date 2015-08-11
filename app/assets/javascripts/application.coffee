@@ -1,5 +1,6 @@
 #= require jquery
 #= require jquery_ujs
+#= require_tree ../../../vendor/assets/javascripts/.
 
 $ ->
 
@@ -69,4 +70,11 @@ $ ->
       data: form.serialize()
       dataType: 'json'
       success: updateOrderItemsFromRemote
+
+  $(document).ready ->
+    $("#owl-example").owlCarousel({
+      autoPlay: 3000,
+      items : 4,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]})
       
