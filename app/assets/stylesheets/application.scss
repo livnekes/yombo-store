@@ -6,6 +6,10 @@ html { font-family: $font; font-size:100%; background:#112326; }
 body { -webkit-font-smoothing:antialiased}
 a { color:inherit;}
 
+a, p, div, li {
+  direction: rtl;
+}
+
 //
 // Demo banner
 //
@@ -193,7 +197,17 @@ section.content {
 				h4 a:hover { text-decoration:underline;}
 				p.info {margin-left:50%; margin:6px 0 10px 0; font-size:0.85em; line-height:1.7; color:#444;}
 				p.buttons { float:right; margin-top:0;}
-				p.buttons a { font-size:0.75em; font-weight:bold; background:#BEBEBE; color:#fff; text-decoration:none; text-transform:uppercase; padding:3px 6px; border-radius:3px;}
+				p.buttons a {
+                  font-size:0.75em;
+                  font-weight:bold;
+                  background:#BEBEBE;
+                  color:#fff;
+                  text-decoration:none;
+                  text-transform:uppercase;
+                  padding:3px 6px;
+                  margin-left: 5px;
+                  border-radius:3px;
+                }
 				p.buttons a.add { background-color:#535353;}
 				p.price {margin-left:50%; color:#222; font-size:1.0em; font-weight:bold;}
 			}
