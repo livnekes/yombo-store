@@ -12,6 +12,7 @@
                 =link_to category.name, products_path(category.permalink)
             %td.space
             %td
-              = image_tag category.image ? category.image.path : '', { class: 'product-img' }
+              =link_to products_path(category.permalink) do
+                =image_tag category.image ? category.image.path : '', { class: 'product-img' }
         %tr{:height => '20px;'}
       
