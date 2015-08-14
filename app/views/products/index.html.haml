@@ -3,7 +3,7 @@
 .category
   %h2= @product_category.name
   - unless @product_category.description.blank?
-    %p.intro= @product_category.description
+    %h3.intro= @product_category.description
   - if @products.empty?
     %p.noProducts There are no products in this category
   - else

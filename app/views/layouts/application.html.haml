@@ -21,7 +21,7 @@
             %li= link_to "בית", root_path, :nav_item => :home
             %li
               = link_to "קטלוג", catalogue_path, :nav_item => :catalogue, :class => 'noborder'
-              %ul
+              %ul#catalog
                 - for category in Shoppe::ProductCategory.ordered
                   %li= link_to category.name, products_path(category.permalink)
             -#%li= link_to "Why shop with us?", page_path(:why), :nav_item => :why

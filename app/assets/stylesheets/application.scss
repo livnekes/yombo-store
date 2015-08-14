@@ -68,7 +68,8 @@ header.main {
 					&:last-child { border-bottom-left-radius:6px; border-bottom-right-radius:6px;}
 				}
 			}
-			li:hover ul { display:block;}
+			li:hover ul { display:block; }
+            #catalog:hover { display:block; }
 		}
 		h1 {
 			float:right;
@@ -202,10 +203,13 @@ section.content {
 		//
 		div.category {
             text-align: right;
-			h2 { font-size:2.0em;color:#216d74;margin-bottom: 60px; }
+            height: 473px;
+			h2 { font-size:2.0em; color:#216d74; }
+            h3 { font-size:1.5em; margin: 15px 0px 50px 0px; }
 			p.intro { margin-top:5px; line-height:1.8; font-size:0.9em;}
 			ul.products { margin-top:45px;}
 			p.noProducts { margin-top:130px; text-align:center; color:#999;}
+            .owl-pagination { margin-top: 45px }
 		}
 		
 		//
