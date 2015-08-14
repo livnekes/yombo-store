@@ -12,35 +12,6 @@ a, p, li {
 }
 
 //
-// Demo banner
-//
-div.demo {
-	background:#1476ba;
-	color:#fff;
-	border-bottom:1px solid #0c588e;
-	font-size:0.8em;
-	div.inner {
-		background:image-url('shoppe/logo.svg') no-repeat 0 14px;
-		background-size:24px;
-		padding:15px 0;
-		p.text { margin-left:34px;}
-		ul.links {
-			float:right;
-			li {
-				float:left;
-				margin-left:15px;
-				a {
-					background:rgba(255,255,255,0.2);
-					text-decoration:none;
-					padding:3px 10px;
-					border-radius:4px;
-				}
-			}
-		}
-	}
-}
-
-//
 // The inner container for the page
 //
 div.inner {
@@ -160,8 +131,20 @@ section.content {
 			p.browse a { font-size:0.8em; background:image-url('search.svg') #A6A6A6 no-repeat 9px 6px; background-size:14px; text-decoration:none; color:#fff; font-weight:bold; padding:5px 9px;  padding-left:28px;border-radius:4px;}
 			h2 { font-size:1.4em; font-weight:normal; color:#333; margin-bottom:50px;}
 		}
-		
-		//
+
+        a.product {
+          display: inline-table;
+          float: right;
+          text-align: center;
+          h4.name {
+            margin-bottom: 24px;
+          }
+          img.product-img {
+            height: 120px;
+          }
+        }
+
+      //
 		// Standard content page
 		//
 		.content {
@@ -717,7 +700,10 @@ footer.main {
 		width:50%;
 		font-size:0.9em;
 		line-height:1.5;
-		p { margin-bottom:15px;}
+		p {
+          margin-bottom:15px;
+          direction: ltr;
+        }
 	}	
 	
 	

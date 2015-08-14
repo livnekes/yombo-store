@@ -72,7 +72,7 @@ $ ->
       success: updateOrderItemsFromRemote
 
   $(document).ready ->
-    $("#owl-example").owlCarousel({
+    $("#owl-products").owlCarousel({
       autoPlay: 3000,
       items : 4,
       itemsDesktop : [1199,3],
