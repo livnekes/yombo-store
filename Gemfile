@@ -12,6 +12,7 @@ gem 'faker'
 gem 'shoppe'
 gem 'awesome_print', require:'ap'
 gem 'thin'
+gem 'pg'
 
 group :development do
   gem 'bullet'
