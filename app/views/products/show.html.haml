@@ -1,7 +1,7 @@
 - active_nav_item :catalogue
 - @page_title = @product.name + " - " + @product.product_category.name
 .product
-  - path = @product.data_sheet.present? ? @product.data_sheet : image_path('default_disc.jpg')
+  - path = @product.data_sheet.present? ? @product.data_sheet.path : image_path('default_disc.jpg')
   .img{:style => "background-image:url(#{path})"}
   %h2= @product.name
   %p.intro= @product.short_description
