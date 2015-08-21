@@ -432,10 +432,11 @@ section.content {
 		// product page
 		//
 		div.product {
+            text-align: right;
 			overflow:hidden;
-			.img { float:right; width:45%; height:260px; background-size:contain; background-repeat:no-repeat; background-position:top right;}
-			h2 { font-size:2.0em;color:#216d74;}
-			p.intro { font-size:0.8em; color:#333; line-height:1.5; margin-top:8px; width:50%;}
+			.img { float:right; width:35%; height:260px; background-size:contain; background-repeat:no-repeat; background-position:top right;}
+			h2 { font-size:2.0em; color:#216d74; margin-top: 45px;}
+			p.intro { font-size:0.8em; color:#333; line-height:1.5; margin-top:8px;}
 			hr { margin-top:200px; border-color:#C4DDDE;}
 			
 			table.variants {
@@ -471,13 +472,11 @@ section.content {
 			}
 			
 			div.optionsBox {
-				margin-top:50px;
-				position:absolute;
-				width:370px;
+				margin-top:20px;
 				font-size:0.8em;
 				.top {
 					overflow:hidden;
-					p.price { width:45%; float:left; font-size:1.3em; font-weight:bold;}
+					p.price { font-size:1.3em; font-weight:bold;}
 					form {
 						margin-left:50%;
 						input { float:right; background:#256D73; border:0; font-family:$font; height:24px; padding:4px 12px; color:#fff; border-radius:4px; font-weight:bold; font-size:0.9em; margin-left:4px;}
