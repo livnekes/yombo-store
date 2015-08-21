@@ -105,7 +105,7 @@ header.main {
 	//
 	&.basic {
 		background:#112326;
-		nav.main { padding-top:15px; padding-bottom:15px;}
+		nav.main { padding:15px; }
 		nav.main h1 { padding-top:15px; margin-bottom:0;}
 		nav.main ul { padding-top:8px;}
 	}
@@ -144,6 +144,8 @@ section.content {
             height: 120px;
           }
         }
+
+        .owl-pagination { margin-top: 25px }
 
       //
 		// Standard content page
@@ -637,7 +639,7 @@ section.content {
 footer.main {
 	color:#53686B;
 	font-size:0.9em;
-	padding:40px 0;
+	padding:40px 15px;
 	overflow:hidden;
 	clear:both;
 	a { color:inherit;}
@@ -704,4 +706,11 @@ div.overlay {
 	left:0;
 	height:4000px;
 	background:rgba(0,0,0,0.3);
+}
+
+@media only screen and (max-width: 1000px) {
+  div.inner {
+    width: 95%;
+    margin-right: 15px;
+  }
 }
