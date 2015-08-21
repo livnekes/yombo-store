@@ -2,4 +2,4 @@
   - for product in products.includes(:default_image)
     = link_to product_path(product.product_category.permalink, product.permalink), { class: 'product' } do
       %h4.name= product.name
-      = image_tag product.default_image ? product.default_image.path : '', { class: 'product-img' }
+      = image_tag product.default_image ? product.default_image.path : 'default_disc.jpg', { class: 'product-img' }
