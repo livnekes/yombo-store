@@ -59,4 +59,4 @@
           %th= attribute.key
           %td= link_to attribute.value, product_filter_path(:key => attribute.key, :value => attribute.value)
   .description
-    = markdown @product.description
+    = markdown @product_category.description
