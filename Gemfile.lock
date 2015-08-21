@@ -86,7 +86,6 @@ GEM
     mini_portile (0.6.2)
     minitest (5.7.0)
     multi_json (1.11.1)
-    mysql2 (0.3.18)
     nifty-attachments (1.0.4)
     nifty-dialog (1.0.7)
     nifty-key-value-store (1.0.2)
@@ -195,7 +194,6 @@ DEPENDENCIES
   faker
   haml
   jquery-rails
-  mysql2
   pg
   quiet_assets
   rails (= 4.2.3)
