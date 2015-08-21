@@ -73,7 +73,7 @@ $ ->
 
   $(document).ready ->
     $("#owl-products").owlCarousel({
-      autoPlay: 3000,
-      items : 5,
+      autoPlay: 2000,
+      items : 3,
       itemsDesktop : [1199,3],
       itemsDesktopSmall : [979,3]})
