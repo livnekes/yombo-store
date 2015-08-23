@@ -10,6 +10,7 @@
             %td
               %h4
                 =link_to category.name, products_path(category.permalink)
+              %p=category.short_description
             %td.space
             %td
               =link_to products_path(category.permalink) do
