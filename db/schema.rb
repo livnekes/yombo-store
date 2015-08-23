@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141026181718) do
+ActiveRecord::Schema.define(version: 20151008121073) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -187,6 +187,7 @@ ActiveRecord::Schema.define(version: 20141026181718) do
     t.integer  "depth"
     t.string   "ancestral_permalink"
     t.boolean  "permalink_includes_ancestors", default: false
+    t.string   "short_description"
   end
 
   add_index "shoppe_product_categories", ["lft"], name: "index_shoppe_product_categories_on_lft", using: :btree
