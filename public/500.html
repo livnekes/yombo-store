@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
 <head>
-  <title>We're sorry, but something went wrong (500)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>500 page</title>
   <style>
   body {
     background-color: #EFEFEF;
@@ -25,9 +25,9 @@
   }
 
   h1 {
-    font-size: 100%;
-    color: #730E15;
-    line-height: 1.5em;
+    font-size: 2.0em;
+    color: #216d74;
+    margin-top: 45px;
   }
 
   body > p {
@@ -44,14 +44,44 @@
     color: #666;
     box-shadow:0 3px 8px rgba(50, 50, 50, 0.17);
   }
+  #error-disc {
+    padding: 37px 0;
+  }
   </style>
+  <script>
+    var looper;
+    var degrees = 0;
+    function rotateAnimation(el,speed){
+      var elem = document.getElementById(el);
+      if(navigator.userAgent.match("Chrome")){
+        elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+      } else if(navigator.userAgent.match("Firefox")){
+        elem.style.MozTransform = "rotate("+degrees+"deg)";
+      } else if(navigator.userAgent.match("MSIE")){
+        elem.style.msTransform = "rotate("+degrees+"deg)";
+      } else if(navigator.userAgent.match("Opera")){
+        elem.style.OTransform = "rotate("+degrees+"deg)";
+      } else {
+        elem.style.transform = "rotate("+degrees+"deg)";
+      }
+      looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+      degrees++;
+      if(degrees > 359){
+        degrees = 1;
+      }
+    }
+  </script>
 </head>
 
 <body>
   <!-- This file lives in public/500.html -->
   <div class="dialog">
-    <h1>We're sorry, but something went wrong.</h1>
+    <h1>הדף שחיפשת לא נמצא</h1>
+    <a href="/">
+      <p>חזור לדף הבית</p>
+      <img id="error-disc" src="error_disc.jpg" alt="error disc"/>
+    </a>
   </div>
-  <p>If you are the application owner check the logs for more information.</p>
+  <script>rotateAnimation("error-disc",30);</script>
 </body>
 </html>
