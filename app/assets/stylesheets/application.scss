@@ -70,6 +70,9 @@ header.main {
 			}
 			li:hover ul { display:block; }
             #catalog:hover { display:block; }
+            #catalog > li + li {
+              border-top: 1px solid rgba(204, 184, 184, 0.16);
+            }
 		}
 		h1 {
 			float:right;
@@ -147,7 +150,7 @@ section.content {
 
         .owl-pagination { margin-top: 25px }
 
-      //
+        //
 		// Standard content page
 		//
 		.content {
@@ -276,7 +279,7 @@ section.content {
             td {
               vertical-align: middle;
               &.space {
-                width: 70px;
+                width: 30px;
               }
               h4 {
                 font-size:1.3em;
@@ -692,9 +695,7 @@ footer.main {
           margin-bottom:15px;
           direction: ltr;
         }
-	}	
-	
-	
+	}
 }
 
 div.overlay {
@@ -712,5 +713,11 @@ div.overlay {
   div.inner {
     width: 95%;
     margin-right: 15px;
+    section.primary a.product {
+      display: block;
+      float: none;
+      text-align: center;
+    }
   }
 }
+
